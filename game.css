@@ -1,0 +1,324 @@
+*{
+   margin: 0;
+   padding: 0;
+   border: none;
+   text-decoration: none;
+}
+
+header{
+   position: sticky;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   background-color: red;
+   color: white;
+   font-family: sans-serif;
+   padding: 1rem 2rem;
+}
+
+#player{
+   font-size: 1.4rem;
+   font-weight: 700;
+}
+
+#title{
+   font-size: 1.6rem;
+   font-family: cursive;
+}
+
+#timer{
+   text-align: center;
+}
+
+#count{
+   font-family: sans-serif;
+   font-size: 2rem;
+}
+
+#buttons button, #start{
+   display: none;
+   width: 3.4rem;
+   height: 1.8rem;
+   border-radius: 0.25rem;
+   border: 2px solid white;
+   background-color: red;
+   color: white;
+   cursor: pointer;
+   transition: 0.3s ease-in;
+}
+
+#buttons button:hover, #start:hover{
+   background-color: white;
+   color: red;
+}
+
+#start{
+   display: block;
+   margin: auto;
+   width: 60px;
+   height: 35px;
+   font-size: 24px;
+}
+
+#cover{
+   background-color: rgba(255, 0, 0, 0.322);
+   position: absolute;
+   top: 0;
+   width: 100%;
+   height: 0;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#about{
+   max-width: 280px;
+   background-color: red;
+   padding: 30px 20px;
+   border-radius: 10px;
+   color: white;
+   font-family: sans-serif;
+   border: 2px solid white;
+}
+
+#about h1, #playerAbt{
+   font-size:30px;
+   margin: 0 0 20px;
+}
+
+#about p{
+   font-size: 20px;
+   margin: 0 0 20px;
+}
+
+
+
+form{
+   background-color: red;
+   border-radius: 0.3rem;
+   padding: 2rem 1.4rem;
+   width: 80%;
+   margin: 4rem auto;
+}
+
+form p{
+   font-size: 2.4rem;
+   color: white;
+   font-family: cursive;
+   font-weight: 900;
+   margin-bottom: 1rem;
+}
+
+form #eName{
+   height: 3rem;
+   width: 90%;
+   border-radius: 0.25rem;
+   font-size: 2rem;
+   padding-left: 1rem;
+   font-family: sans-serif;
+   color: red;
+   outline: none;
+}
+
+.selected{
+   display: none;
+}
+
+form #submit{
+   display: block;
+   margin: 2rem auto 0;
+   font-size: 2rem;
+   padding: 0.8rem 1.4rem;
+   font-family: cursive;
+   font-weight: bolder;
+   border-radius: 0.5rem;
+   color: red;
+   transition: 0.4s ease-in-out;
+}
+
+form #submit:hover{
+   transform: scale(1.2);
+}
+
+.animate{
+   animation: animate 0.5s linear forwards;
+}
+
+.animateStart{
+   animation: animateStart 0.5s ease-in forwards;
+}
+
+#pause{
+   background-color: rgba(255, 0, 0, 0.651);
+   display: flex;
+   width: 100%;
+   height: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   justify-content: center;
+   align-items: center;
+   overflow: hidden;
+}
+
+#play{
+   width: 400px;
+   height: 200px;
+   border-radius: 10px;
+   border: 2px solid white;
+   color: white;
+   font-size: 100px;
+   font-weight: 900;
+   text-align: center;
+   background-color: transparent;
+   text-align: center;
+   cursor: pointer;
+}
+
+
+#countDown{
+   display: none;
+   border-radius: 10px;
+   border: 2px solid rgb(255, 255, 255);
+   color: rgb(255, 255, 255);
+   padding: 20px;
+   font-size: 50px;
+   text-align: center;
+   font-family: sans-serif;
+}
+
+#border{
+   display: none;
+   padding: 20px;
+   border-radius: 10px;
+   background-color: red;
+   width: 80%;
+   margin: 20px auto;
+   overflow: hidden;
+}
+
+#theGame{
+   border: 2px solid white;
+   border-radius: 10px;
+   text-align: center;
+   background-color: white;
+   padding: 20px;
+}
+
+#mainDisplay{
+   width: 80%;
+   min-height: 150px;
+   max-width: 280;
+   border: 2px solid black;
+   border-radius: 10px;
+   margin: auto;
+}
+
+#options{
+   width: 50%;
+   padding-top: 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: auto;
+   text-align: center;
+}
+
+#options div{
+   display: inline-block;
+   width: 100px;
+   height: 100px;
+   border: 1px solid black;
+   margin: 20px auto;
+   cursor: pointer;
+}
+
+#endGame{
+   display: none;
+   max-width: 350px;
+   margin: 30px auto;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background-color: red;
+   border-radius: 10px;
+   padding: 20px;
+   color: white;
+   overflow: hidden;
+}
+
+#endGame h1{
+   font-size: 34px;
+   margin-bottom: 14px;
+}
+
+#endGame p{
+   font-size: 24px;
+   margin-bottom: 20px;
+}
+
+#soreName{
+   font-size: 34px;
+}
+
+#scored{
+   font-size: 30px;
+}
+
+@media all and (max-width: 800px) {
+   #title{
+      display: none;
+   }
+
+   #endGame{
+      margin: 20px 20px;
+   }
+
+   #play, #countDown{
+      margin: 30px;
+   }
+
+   #options{
+      width: 90%;
+   }
+
+   #options div{
+      margin: auto;
+      width: 50px;
+      height: 50px;
+   }
+
+   #info p{
+      font-size: 24px;
+   }
+
+   #eName{
+      font-size: 20px;
+      height: 24px;
+   }
+
+}
+
+@keyframes animate{
+   from{
+      opacity: 1;
+      transform: scale(1);
+   }
+
+   to{
+      opacity: 0;
+      transform: scale(0);
+   }
+}
+
+@keyframes animateStart{
+   from{
+      opacity: 0;
+      transform: translateY(-100px);
+   }
+
+   to{
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

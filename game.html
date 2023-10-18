@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Matching Game</title>
+   <link rel="stylesheet" href="game.css">
+</head>
+<body>
+   <header>
+      <div id="player">
+         <div id="pName">Your Name</div>
+         <div id="pScore">Score : <span id="score">0</span></div>
+      </div>
+      <div id="title">
+         <h1>30 secs Game</h1>
+      </div>
+      <div id="timer">
+         <span id="count">00:30</span>
+         <div id="buttons">
+            <button id="stop">Pause</button>
+         </div>
+      </div>
+   </header>
+
+   <div id="pause">
+      <button id="play">Play</button>
+      <div id="countDown"></div>
+   </div>
+
+   <form id="info">
+      <p>Enter your Name</p>
+      <input autofocus autocomplete="off" type="text" id="eName">
+      <input type="submit" value="Enter Info" id="submit">
+   </form>
+
+   <div id="cover">
+      <div id="about">
+         <h1>Alright, <span id="playerAbt"></span></h1>
+         <p>The game is pretty simple. Match the thing and win the thing. Your score is determined by how fast you are </p>
+         <button id="start">Play</button>
+      </div>
+   </div>
+
+   <div id="border">
+      <div id="theGame">
+         <div id="mainDisplay"></div>
+         <div id="options">
+            <div id="opt1"></div>
+            <div id="opt2"></div>
+            <div id="opt3"></div>
+         </div>
+      </div>
+   </div>
+
+   <div id="endGame">
+      <div id="rants">
+         <h1>Time's Up</h1>
+         <p>Oga time is up</p>
+         <p>No spoil your device ontop game</p>
+         <p>Oya getat</p>
+      </div>
+      <div id="scoring">
+         <h1 id="heading">Your Score</h1>
+         <p id="scoreName"></p>
+         <span id="scored"></span>
+      </div>
+   </div>
+   
+   <script src="game.js"></script>
+</body>
+</html>
