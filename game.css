@@ -233,6 +233,11 @@ form #submit:hover{
    border: 1px solid black;
    margin: 20px auto;
    cursor: pointer;
+   transition: 0.2s ease-in;
+}
+
+#options div:hover{
+   transform: scale(1.2);
 }
 
 #endGame{
